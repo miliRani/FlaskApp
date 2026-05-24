@@ -43,7 +43,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: coverage-report
-        files: coverage.xml
+        path: coverage.xml
 
   sonarqube-scanner:
     name: Sonarqube scanner and analyze
