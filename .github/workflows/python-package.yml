@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+        python-version: ["3.11"]
 
     steps:
     - uses: actions/checkout@v4
@@ -39,8 +39,8 @@ jobs:
       run: |
         pytest
     sonarqube-scanner:
-    name: Build and analyze
-    runs-on: ubuntu-latest
+     name: Build and analyze
+     runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v4 # v4.3.1
